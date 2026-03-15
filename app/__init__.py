@@ -1,1 +1,1 @@
-"""Application package for the SpotDL streaming manager."""
+"""spotdl streaming manager application package."""
