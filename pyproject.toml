@@ -1,20 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "spotdl-manager"
+name = "spotdl-streaming-manager"
 version = "0.1.0"
-description = "SpotDL streaming manager MVP"
+description = "Local streaming manager built on SpotDL"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
-    "spotdl==4.4.3",
-    "pyside6",
-    "sqlalchemy>=2.0",
-    "alembic",
-    "mutagen",
-    "rapidfuzz",
-    "watchdog",
+  "spotdl==4.4.3",
+  "pyside6",
+  "sqlalchemy>=2.0",
+  "alembic",
+  "mutagen",
+  "rapidfuzz",
+  "watchdog",
 ]
 
-[dependency-groups]
+[project.optional-dependencies]
 dev = [
-    "pytest",
+  "pytest",
 ]
